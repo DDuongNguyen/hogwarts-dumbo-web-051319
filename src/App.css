@@ -64,7 +64,7 @@ ul {
 
 .subtleText {
   color: #D1D1D1;
-  font-size: .75em; 
+  font-size: .75em;
 }
 
 
@@ -80,9 +80,32 @@ ul {
   float: left;
   margin: 2%;
   padding: 1%;
-  outline: #3B0B0B dotted thick;
-  transition: 0.75s;
+  /* outline: #FBB solid; */
+  border-radius: 20px;
+  transition: 1s;
   opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pigTile h3 {
+  color: #FBB;
+}
+
+
+.minPigTile {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+}
+
+.maxPigTile {
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+
+.pigTile:hover {
+  transform: scale(1.05);
 }
 
 .minBackgroundSneak {
@@ -101,26 +124,6 @@ ul {
   z-index: -3;
   opacity: 0.75;
 }
-
-.pigTile h3 {
-  color: #FBB;
-}
-.minPigTile {
-  width: 250px;
-  height: 250px;
-  background-size: cover;
-}
-
-.maxPigTile {
-  background-size: cover;
-  width: 500px;
-  height: 500px;
-}
-
-.pigTile:hover {
-  transform: scale(1.05);
-}
-
 
 .App-logo {
   animation: App-logo-spin infinite 5s linear;
